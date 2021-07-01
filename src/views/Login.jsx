@@ -88,12 +88,12 @@ const Login = () => {
             Have no Account?
           </Button>
 
-          <Button
+          {/* <Button
             onClick={() => history.push('/forgot_password')}
             className="bg-red-500 hover:bg-red-700"
           >
             Forgot Password?
-          </Button>
+          </Button> */}
         </div>
       </div>
     </GuestLayout>
