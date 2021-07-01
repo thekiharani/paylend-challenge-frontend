@@ -14,19 +14,15 @@ import Edit from './views/Edit'
 function App() {
   const history = useHistory()
   return (
-    <Router history={history}>
+    <Router>
       <Switch>
-        <Route exact path="/" render={(props) => <Welcome {...props} />} />
-        <Route exact path="/login" render={(props) => <Login {...props} />} />
-        <Route exact path="/edit" render={(props) => <Edit {...props} />} />
-        <Route
-          exact
-          path="/register"
-          render={(props) => <Register {...props} />}
-        />
+        <Route exact path="/" component={Welcome} />
+        <Route exact path="/login" component={Login} />
+        <Route exact path="/edit" component={Edit} />
+        <Route exact path="/register" component={Register} />
       </Switch>
     </Router>
   )
 }
 
-export default ({ contentParams }) => <App contentParams={contentParams} />
+export default App
