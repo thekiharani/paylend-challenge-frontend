@@ -31,7 +31,7 @@ const Welcome = () => {
       <div className="bg-white rounded-lg p-8">
         <div className="flex flex-col space-y-2 my-2 text-center">
           <p className="text-lg">
-            Welcome <span className="font-bold">{userData?.full_name}</span>
+            Welcome <span className="font-bold">{userData.full_name}</span>
           </p>
 
           <table className="table-auto w-full whitespace-nowrap">

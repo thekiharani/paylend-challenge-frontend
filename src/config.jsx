@@ -5,8 +5,8 @@ const HOST_URL = window.location.hostname
 let API_URL
 
 switch (HOST_URL) {
-  case 'localhost':
-  case '127.0.0.1':
+  case 'localhosta':
+  case '127.0.0.1a':
     API_URL = 'http://localhost:8200/api'
     break
   case 'pldemo.thekiharani.com':
