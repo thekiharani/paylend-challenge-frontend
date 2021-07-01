@@ -9,9 +9,10 @@ switch (HOST_URL) {
   case '127.0.0.1':
     API_URL = 'http://localhost:8200/api'
     break
-
+  case 'pldemo.thekiharani.com':
+    API_URL = 'https://backend.pldemo.thekiharani.com/api'
   default:
-    API_URL = ''
+    API_URL = 'https://backend.pldemo.thekiharani.com/api'
     break
 }
 
