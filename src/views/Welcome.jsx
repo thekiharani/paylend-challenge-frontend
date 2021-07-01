@@ -8,11 +8,14 @@ const Welcome = () => {
   const history = useHistory()
   const userData = parseJSON(localStorage.getItem('userInfo'))
 
-  if (userData === null) history.replace('/login')
+  if (userData === null) {
+    history.push('/login')
+    location.reload()
+  }
 
   const logout = () => {
     localStorage.clear()
-    history.replace('/login')
+    history.push('/login')
   }
 
   const edit = () => {

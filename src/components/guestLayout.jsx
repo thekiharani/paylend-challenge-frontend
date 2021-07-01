@@ -8,7 +8,9 @@ const GuestLayout = ({ children }) => {
 
   useEffect(() => {
     if (token !== null) {
-      history.replace('/')
+      // window.open('/login', '_self')
+      history.push('/')
+      location.reload()
     }
     setReady(true)
   }, [token, history])

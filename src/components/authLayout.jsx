@@ -9,7 +9,9 @@ const AuthLayout = ({ children }) => {
 
   useEffect(() => {
     if (token === null) {
-      history.replace('/login')
+      // window.open('/login', '_self')
+      history.push('/login')
+      location.reload()
     }
     (async () => {
       await setUser()

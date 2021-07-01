@@ -13,7 +13,6 @@ import {
 import { Button } from '../components/buttons'
 import AuthLayout from '../components/authLayout'
 import { getUser, setUser } from '../utils/auth'
-import { prettyJSON } from '../config'
 
 const Edit = () => {
   const history = useHistory()
